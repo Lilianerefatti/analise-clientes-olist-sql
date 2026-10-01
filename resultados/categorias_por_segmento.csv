@@ -1,0 +1,16 @@
+"segmento_retencao","categoria","quantidade_itens","valor_produtos","posicao"
+"ativo","beleza_saude",2541,338590.80,1
+"ativo","cama_mesa_banho",2123,194651.87,2
+"ativo","utilidades_domesticas",1819,182969.95,3
+"ativo","relogios_presentes",1463,262784.07,4
+"ativo","esporte_lazer",1409,154770.71,5
+"em_risco","cama_mesa_banho",2243,208729.23,1
+"em_risco","beleza_saude",2065,264498.24,2
+"em_risco","esporte_lazer",1793,205527.68,3
+"em_risco","moveis_decoracao",1765,158719.90,4
+"em_risco","informatica_acessorios",1717,192320.66,5
+"inativo","cama_mesa_banho",6587,620053.66,1
+"inativo","esporte_lazer",5229,594554.16,2
+"inativo","moveis_decoracao",5066,419313.87,3
+"inativo","beleza_saude",4856,629907.71,4
+"inativo","informatica_acessorios",4651,569550.38,5
