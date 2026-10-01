@@ -176,12 +176,14 @@ Os dados consolidados utilizados pelo Power BI estão disponíveis na pasta [`re
 ## Como reproduzir a análise
 
 1. Crie um banco de dados vazio no PostgreSQL.
-2. Execute o script de criação da camada `staging`.
+2. Execute [`sql/01_criacao_staging.sql`](sql/01_criacao_staging.sql).
 3. Baixe e importe os seis CSVs conforme as orientações de [`dados/README.md`](dados/README.md).
-4. Execute os demais scripts da pasta [`sql`](sql) seguindo a ordem numérica.
-5. Execute `resumo geral.sql` para gerar as saídas consolidadas.
-6. Exporte as consultas para a pasta `resultados` ou utilize os CSVs já disponibilizados.
-7. Abra [`dashboard_analise_clientes_olist.pbix`](powerbi/dashboard_analise_clientes_olist.pbix) no Power BI Desktop.
+4. Execute [`sql/02_criacao_camada_analytics.sql`](sql/02_criacao_camada_analytics.sql).
+5. Execute [`sql/03_views_analiticas.sql`](sql/03_views_analiticas.sql).
+6. Execute [`sql/04_analise_clientes.sql`](sql/04_analise_clientes.sql).
+7. Execute [`sql/05_resumo_executivo.sql`](sql/05_resumo_executivo.sql) para gerar as saídas consolidadas.
+8. Exporte as consultas para a pasta `resultados` ou utilize os CSVs já disponibilizados.
+9. Abra [`dashboard_analise_clientes_olist.pbix`](powerbi/dashboard_analise_clientes_olist.pbix) no Power BI Desktop.
 
 > Ao mover o projeto para outro diretório, pode ser necessário atualizar os caminhos dos arquivos CSV em **Transformar dados → Configurações da fonte de dados** no Power BI.
 
@@ -206,11 +208,10 @@ analise-clientes-olist-sql/
 │   └── categorias_por_segmento.csv
 └── sql/
     ├── 01_criacao_staging.sql
-    ├── 02-exploração_inicial.sql
-    ├── 03_criacao_camada_analytics.sql
-    ├── 04_views_analiticas.sql
-    ├── 05_analise_clientes.sql
-    └── resumo geral.sql
+    ├── 02_criacao_camada_analytics.sql
+    ├── 03_views_analiticas.sql
+    ├── 04_analise_clientes.sql
+    └── 05_resumo_executivo.sql
 ```
 
 ## Autoria
